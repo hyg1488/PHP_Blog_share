@@ -5,10 +5,14 @@
     include "imports/head.php";
     
     if($_POST['id'] == null or $_POST['email01'] == null or $_POST['email02']== null  
-    or $_POST['nickname']== null  or $_POST['currentPw']== null  ){ ?>
+    or $_POST['nickname']== null ){ ?>
         <script>
         window.location.href = 'myPage.php?cnt=1';</script>
-    <?php }else{
+    <?php }else if($_POST['currentPw']== null ){?>
+        <script>
+        window.location.href = 'myPage.php?cnt=3';</script>
+    <?php
+    }else{
         if($_POST['currentPw'] ==  $_SESSION['user']['passwd']){
 
             $id = $_POST['id'];

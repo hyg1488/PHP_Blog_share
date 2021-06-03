@@ -103,7 +103,7 @@
 
                 <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Confirm Password</span>
-                <input type="password"  class="form-control" placeholder="Confirm Password" aria-label="password to change" aria-describedby="basic-addon1" name="confirmPw">
+                <input type="password"  class="form-control" placeholder="Confirm Password to change" aria-label="password to change" aria-describedby="basic-addon1" name="confirmPw">
                 </div>
 
                 <div class="input-group mb-3">
@@ -131,6 +131,8 @@
                     <div style=" color:#CD0000	;"> Please check the revision information.</div>
                 <?php }else if($cnt == 2) { ?>
                     <div style=" color:#CD0000	;"> Check your confirm password !</div>
+                <?php }else if($cnt == 3) { ?>
+                    <div style=" color:#CD0000	;"> Please enter your confirm password !</div>
                 <?php } ?>
                 <div style="text-align:right;"><input type="submit"  onclick = "location.href = 'doUserModify.php' " class="btn btn-secondary" style="border-radius: 30px;" value="Modify"></div>
                 <br>
