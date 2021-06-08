@@ -1,4 +1,6 @@
 <?php
+    // echo '현재 버젼 : '.phpversion();
+    // exit();
     function mysqlConn()
     {
         $conn = mysqli_Connect("localhost", "hyg", "1234", "PHP_blog") or die("Connect ERROR");

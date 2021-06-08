@@ -26,6 +26,8 @@
                             <h2 class="subheading">Please join if you want to talk with me.</h2>
                             <span class="meta">
                                 <form action="doLogin.php" method="post">
+                                <!-- <form action="doLoginSecSql.php" method="post"> -->
+
                                     <div class="input-group mb-3">
                                     <span class="input-group-text" id="inputGroup-sizing-default"><div style="margin-left:4px;margin-right:4px;">ID</div> </span>
                                     <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="id" required>

@@ -10,6 +10,28 @@
          <?php
             include "imports/head.php";
          ?>
+         <script src="http://madalla.kr/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#imgView").on('change', function(){
+                readURL(this);
+            });
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                    $('#View').attr('src', e.target.result);
+                }
+
+              reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+    </script>
     </head>
     <style>
         textarea{
@@ -83,10 +105,10 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                 <form action="doUserModify.php" method="post">
-                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1"><div class="userImage">&lt; image &gt;</div> &nbsp;&nbsp;&nbsp;&nbsp;  User ID &nbsp; &nbsp;
+                <div class="input-group mb-3">     <form id="imgForm">
+                <span class="input-group-text" id="basic-addon1" ><div class="userImage" style="background-color: #e9ecef;"><img id="View" src="assets/img/im.PNG" width="80px" height="80px" style="border-radius:30px; margin-top:10px;"  alt="image"  /></div>  &nbsp;&nbsp;&nbsp;&nbsp;  User ID &nbsp; &nbsp;
                 <input type="text" class="form-control" placeholder="ID" aria-label="ID" aria-describedby="basic-addon1" value="<?=$_SESSION['user']['id']?>" name="id" readonly>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label> <input style="position: relative;" type="file" class="file_input_hidden">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label> <input style="position: relative;" type="file" class="file_input_hidden"  id="imgView"> </form>
                         </label>
                 </span>
                 </div>
