@@ -5,7 +5,6 @@ MySQL - 10.4.19-MariaDB : Database - PHP_blog
 */
 
 /*!40101 SET NAMES utf8 */;
-
 /*!40101 SET SQL_MODE=''*/;
 
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
