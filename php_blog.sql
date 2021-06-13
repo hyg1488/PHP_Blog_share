@@ -66,6 +66,7 @@ CREATE TABLE `post` (
 insert  into `post`(`id`,`title`,`contents`,`regDate`,`updateDate`,`nickname`,`views`) values 
 (1,'01. 포스트 테스트 - 글쓰기 테스트 TEST !','01. 포스트 테스트 - 글쓰기 테스트 TEST !\r\n\r\n* 테스트 : 글 쓰기 테스트 - 포스트 테스트 - 글쓰기 테스트 TEST !\r\n\r\n* 글 쓰기 테스트 !\r\n\r\n[ 01. 포스트 테스트 - 글쓰기 테스트 TEST ! 01. 포스트 테스트 - 글쓰기 테스트 TEST !01. 포스트 테스트 - 글쓰기 테스트 TEST !01. 포스트 테스트 - 글쓰기 테스트 TEST !01. 포스트 테스트 - 글쓰기 테스트 TEST !]','2021-06-02 21:24:22',NULL,'Admin',20);
 
+
 /*Table structure for table `reply` */
 
 DROP TABLE IF EXISTS `reply`;
