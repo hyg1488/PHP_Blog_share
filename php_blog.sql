@@ -119,10 +119,10 @@ CREATE TABLE `user_info` (
 /*Data for the table `user_info` */
 
 insert  into `user_info`(`num`,`id`,`passwd`,`email`,`nickname`,`regDate`,`updateDate`,`aboutMe`,`rank`) values 
-(1,'admin','aptl951','hyg1488@naver.com','Admin','2021-05-31 12:05:14','2021-06-07 10:04:01','hi hi ~!!! hello','admin'),
-(2,'hyg1488','ghd951','hyg1488@naver.com','TEST','2021-06-02 12:59:34','2021-06-03 09:41:44','hi, hello !\r\nheloo ~ hello ~~~','user'),
-(3,'yungi','ghd951','hyg1488@naver.com','Tom','2021-06-02 16:09:47',NULL,NULL,'user'),
-(4,'test','ghd5982','hsda@sasdas.com','dandigh','2021-06-02 23:24:43',NULL,NULL,'user');
+(1,'admin','1234','hyg1488@naver.com','Admin','2021-05-31 12:05:14','2021-06-07 10:04:01','hi hi ~!!! hello','admin'),
+(2,'hyg1488','1234','hyg1488@naver.com','TEST','2021-06-02 12:59:34','2021-06-03 09:41:44','hi, hello !\r\nheloo ~ hello ~~~','user'),
+(3,'yungi','1234','hyg1488@naver.com','Tom','2021-06-02 16:09:47',NULL,NULL,'user'),
+(4,'test','1234','hsda@sasdas.com','dandigh','2021-06-02 23:24:43',NULL,NULL,'user');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
